@@ -4,7 +4,7 @@
 #              and uploading them back to Telegram.
 # Author: Gagan
 # GitHub: https://github.com/devgaganin/
-# Telegram: https://t.me/save_restricted_grppp
+# Telegram: https://t.me/team_spy_pro
 # YouTube: https://youtube.com/@dev_gagan
 # Created: 2025-01-11
 # Last Modified: 2025-01-11
@@ -202,7 +202,7 @@ async def plan(client, message):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/Mr_rahul090")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await message.reply_text(plan_text, reply_markup=buttons)
@@ -211,20 +211,17 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> **💎 Upgrade to Premium 💎**\n\n"
-        " **🚀 Exclusive Premium Features:**\n ✅ No need to verify every 3 hours ⏳\n  
-          ✅ Bulk mode: Upload up to 300 files 📂\n 
-          ✅ No 300-second waiting time ⏱️\n"
-         " **🔹 Free Plan User** \n\n  
-⏳ Expiry: Never 🕰️\n
-💰 Price: Rs 0\n\n"
-
-       )
+        "> 💰**Premium Price**\n\n Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).\n"
+        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
+        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
+        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
+        "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms or click See Terms👇\n"
+    )
      
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/Mr_rahul090")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await callback_query.message.edit_text(plan_text, reply_markup=buttons)
@@ -242,7 +239,7 @@ async def see_terms(client, callback_query):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/Mr_rahul090")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await callback_query.message.edit_text(terms_text, reply_markup=buttons)
